@@ -101,6 +101,9 @@ public class MainActivity extends AppCompatActivity {
                         Boolean verifica = bancoCompromisso.insereResposta(compromisso.getrData(), compromisso.getrHora(), compromisso.getrDesc());
                         flag[0] = 0;
                         flag[1] = 0;
+                        Log.i("DataAgenda", compromisso.getrData());
+                        Log.i("HoraAgenda", compromisso.getrHora());
+                        Log.i("DescricaoAgenda", compromisso.getrDesc());
                         if(verifica){
                             showToast("Enviado com Sucesso");
                             openDialogVerificaHoje();
